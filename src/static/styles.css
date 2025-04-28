@@ -114,3 +114,32 @@ section h3 {
 .dark-mode .activity-card ul li {
   color: #ddd;
 }
+
+.participant-info {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+.participant-info h4 {
+  margin-top: 0;
+  color: #1a237e;
+}
+
+.participant-info p {
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.dark-mode .participant-info {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+.dark-mode .participant-info h4 {
+  color: #90caf9;
+}
