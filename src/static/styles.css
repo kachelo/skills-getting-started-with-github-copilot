@@ -15,6 +15,11 @@ body {
   background-color: #f5f5f5;
 }
 
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
 header {
   text-align: center;
   padding: 20px 0;
@@ -22,6 +27,10 @@ header {
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+}
+
+header.dark-mode {
+  background-color: #333;
 }
 
 header h1 {
@@ -58,87 +67,79 @@ section h3 {
 }
 
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
   background-color: #f9f9f9;
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+  margin-top: 0;
 }
 
-.activity-card p {
-  margin-bottom: 8px;
+.activity-card ul {
+  padding-left: 20px;
+  margin: 8px 0;
 }
 
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.form-group input,
-.form-group select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-button {
-  background-color: #1a237e;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-button:hover {
-  background-color: #3949ab;
-}
-
-.message {
-  margin-top: 20px;
-  padding: 10px;
-  border-radius: 4px;
+.activity-card ul li {
+  list-style-type: disc;
 }
 
 .success {
-  background-color: #e8f5e9;
-  color: #2e7d32;
-  border: 1px solid #a5d6a7;
+  color: green;
+  font-weight: bold;
 }
 
 .error {
-  background-color: #ffebee;
-  color: #c62828;
-  border: 1px solid #ef9a9a;
-}
-
-.info {
-  background-color: #d1ecf1;
-  color: #0c5460;
-  border: 1px solid #bee5eb;
+  color: red;
+  font-weight: bold;
 }
 
 .hidden {
   display: none;
 }
 
-footer {
-  text-align: center;
-  margin-top: 30px;
-  padding: 20px;
-  color: #666;
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .activity-card {
+  background-color: #444;
+  border-color: #555;
+}
+
+.dark-mode .activity-card ul li {
+  color: #ddd;
+}
+
+.participant-info {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+.participant-info h4 {
+  margin-top: 0;
+  color: #1a237e;
+}
+
+.participant-info p {
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.dark-mode .participant-info {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+.dark-mode .participant-info h4 {
+  color: #90caf9;
 }
